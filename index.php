@@ -17,31 +17,33 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">VideoChat
-                <script type="module" src="js/main.js"></script>
-                <h2 class="left-align">Get started with video calling</h2>
-                <div class="row">
-                    <div>
-                        <button type="button" id="join">Join</button>
-                        <button type="button" id="leave">Leave</button>
-                    </div>
+                <p>ID: <span id="my-id"></span></p>
+                <div>
+                    room name: <input id="room-name" type="text" />
+                    <button id="join">join</button>
                 </div>
+                <video id="local-video" width="400px" muted playsinline></video>
+                <div id="button-area"></div>
+                <div id="remote-media-area"></div>
+
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@skyway-sdk/room/dist/skyway_room-latest.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
