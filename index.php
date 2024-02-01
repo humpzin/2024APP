@@ -16,7 +16,16 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">VideoChat
+                <script type="module" src="js/main.js"></script>
+                <h2 class="left-align">Get started with video calling</h2>
+                <div class="row">
+                    <div>
+                        <button type="button" id="join">Join</button>
+                        <button type="button" id="leave">Leave</button>
+                    </div>
+                </div>
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             ...
